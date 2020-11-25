@@ -8,7 +8,7 @@ Carte::Carte() {
 }
 Carte::~Carte() {
 }
-Carte::Carte(std::string nom, std::string description, std::string sorte) : m_nom(nom), m_description(description), m_sorte(sorte)
+Carte::Carte(std::string nom, std::string description, std::string sorte) : m_nom(nom), m_description(description)
 {
 }
 

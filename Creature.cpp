@@ -8,7 +8,9 @@
 Creature::Creature() {
 }
 
-Creature::Creature(std:: string name, int vie) {
+Creature::Creature( std:: string nom, std:: string description, int vie, std :: string attaque1, std:: string attaque2) :
+ m_nom(nom), m_description(description), m_vie(vie), m_attaque1(attaque1), m_attaque2(attaque2)
+{
 }
 
 Creature:: ~Creature() {
@@ -26,12 +28,22 @@ int Creature::GetVie() const {
     return m_vie;
 }
 
+void Creature::SetNom(std:: string nom) const {
+    m_nom == nom;
+}
+
+
+
 void Creature::afficher() {
     std:: cout << "Votre créature est " << m_nom << " et, il lui reste  " << m_vie << " de vie." << std:: endl;
 }
-void Creature::setCreature(std::string nom, int vie) {
-    nom = m_nom;
-    vie = m_vie;
+void Creature::setCreature( std:: string nom, std:: string description, int vie, std :: string attaque1, std:: string attaque2) {
+    m_vie = vie;
+    m_nom = nom;
+    m_description = description;
+    m_attaque1 = attaque1;
+    m_attaque2 = attaque2;
+
 }
 
 

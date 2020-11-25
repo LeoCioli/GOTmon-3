@@ -17,20 +17,25 @@ class Creature {
 public:
 
     Creature();
-    Creature(std :: string nom, int vie);
+    Creature( std:: string nom, std:: string description, int vie, std :: string attaque1, std:: string attaque2);
     ~Creature();
     void recevoirDegat(Attaque &attaque);
     void afficher ();
     void SetVie(int vie);
     int GetVie() const;
-    void setCreature(std:: string nom, int vie);
+    std:: string GetNom(std:: string nom);
+    void SetNom() const;
+    void setCreature( std:: string nom, std:: string description, int vie, std :: string attaque1, std:: string attaque2);
 
 
 
 protected:
 
     std:: string m_nom;
+    std:: string m_description;
     int m_vie;
+    std:: string m_attaque1;
+    std:: string m_attaque2;
 
 };
 
