@@ -20,8 +20,8 @@ std::string Carte::getDescription() const{
     return m_description;
 }
 
-std::string Carte::getSorte() const{
-    return m_sorte;
+std::string Carte::getType() const{
+    return m_type;
 }
 void Carte::setNom(std::string nom){
     m_nom = nom;
@@ -31,8 +31,8 @@ void Carte::setDescription(std::string description){
     m_description = description;
 }
 
-void Carte::setSorte(std::string sorte){
-    m_sorte = sorte;
+void Carte::setType(std::string type){
+    m_type = type;
 }
 
 void Carte::afficher() {

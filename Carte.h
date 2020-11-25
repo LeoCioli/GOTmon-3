@@ -16,10 +16,10 @@ public:
     Carte(std::string nom, std::string description, std::string type);
     std::string getNom()const;
     std::string getDescription() const;
-    std::string getSorte() const;
+    std::string getType() const;
     void setNom(std::string nom);
     void setDescription(std::string description);
-    void setSorte(std::string type);
+    void setType(std::string type);
     virtual void afficher();
     virtual void SetCreatature(std:: string nom, int vie);
     virtual int GetVie() const ;
@@ -29,7 +29,7 @@ public:
 protected:
     std::string m_nom;
     std::string m_description;
-    std::string m_sorte;
+    std::string m_type;
 };
 
 
